@@ -175,4 +175,9 @@ docker ps -a --size
 
 ![Tamaño de contenedores](images/15.png)
 
+| Recurso  |   Espacio ocupado |
+|----------|------------------:|
+| Imágenes |          170.4 MB |
+| Contenedores |          1.219 kB |
+
 > **Diferencia clave:** Las imágenes y los contenedores son elementos distintos. La imagen `alpine:3.22` actúa como un sistema de archivos de solo lectura base, mientras que cada contenedor añade una capa fina de escritura propia sobre ella para almacenar los cambios durante su ejecución.
