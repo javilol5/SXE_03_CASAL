@@ -118,8 +118,8 @@ ping -c 4 dam_alp2
 
 ![Pruebas de ping entre contenedores](images/7.png)
 
-* **IP:** La comunicación por IP **funciona** correctamente porque ambos contenedores están conectados a la misma red (`bridge` por defecto).
-* **Nombre:** La comunicación por nombre **no funciona** por defecto, ya que Docker no proporciona resolución DNS automática entre contenedores en la red bridge por defecto a menos que se creen redes personalizadas (user-defined networks).
+* **IP:** La comunicación por IP funciona correctamente porque ambos contenedores están conectados a la misma red (`bridge` por defecto).
+* **Nombre:** La comunicación por nombre no funciona por defecto, ya que Docker no proporciona resolución DNS automática entre contenedores en la red bridge por defecto a menos que se creen redes personalizadas (user-defined networks).
 
 ---
 
@@ -175,4 +175,4 @@ docker ps -a --size
 
 ![Tamaño de contenedores](images/15.png)
 
-> **Diferencia clave:** Las imágenes y los contenedores son elementos distintos. La imagen `alpine:3.22` actúa como un sistema de archivos de solo lectura base, mientras que cada contenedor añade una **capa fina de escritura propia** sobre ella para almacenar los cambios durante su ejecución.
+> **Diferencia clave:** Las imágenes y los contenedores son elementos distintos. La imagen `alpine:3.22` actúa como un sistema de archivos de solo lectura base, mientras que cada contenedor añade una capa fina de escritura propia sobre ella para almacenar los cambios durante su ejecución.
